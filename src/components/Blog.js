@@ -2,9 +2,9 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import orobouros from '../imgs/orobouros.png'
-import gumball from '../imgs/gum5Pink.png'
-
-
+import milk from '../imgs/strawberry-milk.png'
+import yoga from '../imgs/yoga.png'
+import plant from '../imgs/plant.png'
 
 
 import me from '../imgs/mePic1.png'
@@ -19,7 +19,24 @@ const Blog = () => {
         console.log('clicked')
         navigate('/addblog')
     }
-
+const choosePic = () =>{
+    const num = 1+ Math.floor(Math.random()*4)
+    console.log(num)
+    switch (num){
+        case 1:
+            return orobouros
+            break
+        case 2:
+            return milk
+            break
+        case 3:
+            return yoga
+            break
+        case 4:
+            return plant
+            break
+    }
+}
     useEffect (() => {
         fetch('https://homeschool-app.onrender.com/blogs/user/1')
             .then ((response) => {
@@ -55,7 +72,7 @@ const Blog = () => {
                             
                             <div key={blog.id}>
                                 <div className="blogCard">
-                                <img className="blogPic" src={orobouros}/>,
+                                <img className="blogPic" src={choosePic()}/>,
                                 <h2>{blog.date.slice(0,10)}</h2>,      
                                 <p>{blog.entry.slice(0,150)}...</p>
                             </div>
