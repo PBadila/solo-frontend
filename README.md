@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+THE HOMESCHOOLING HELPER APP
+
+This app is designed to assist homeschooling families in organizing and keeping track of assignments and the school day.  The features include:
+users (authentication coming soon)
+a calendar to keep track of events, with color-coding by user
+assignment page that displays user's assignments for the day and there will be the ability to check off when completed
+a blog for the user to document what they did and learned that day
+an administrative section for the homeschooling parent to add assignments and users
+future features include a display of the daily affirmation, a practice page with flashcards specific to the user
+
+API link https://homeschool-app.onrender.com/
+
+API routes :
+/assignments/user/:userID
+/calendars
+/blogs/user/:userID
+/users
+/affirmations
