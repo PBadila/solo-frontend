@@ -79,6 +79,19 @@ a blog for the user to document what they did and learned that day
 an administrative section for the homeschooling parent to add assignments and users
 future features include a display of the daily affirmation, a practice page with flashcards specific to the user
 
+To use (for now):
+click Home in nav menu to go to the screen that userID = 1 would see
+click the go to assignments button to see user1's assignments
+click Blog in nav menu to see user1's blog entries (they will be clickable in future for full entry)
+click add blog entry button and be sure to enter 1 for user id - after you submit the new blog appears on your blog page
+
+if you enter ritualmomma in the username box in the top right corner and submit, you will be taken to the adminstrative page, where you can add assignments and users. if you add an assignment, be sure to add to userID = 1 so that you can see it appear on the assignment page.
+
+stretch goals - authentication so that you can sign in as a user to have your specific blogs and assignments displayed.
+
+All of this posts and gets from the backend API that I created.
+
+
 API link https://homeschool-app.onrender.com/
 
 API routes :
