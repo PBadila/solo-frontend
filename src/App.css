@@ -322,7 +322,8 @@ a.contactLink:link{
 .blogCard{
   width:300px;
   height:500px;
-  background-color: #F8D073;
+  background-color:#F8D073;
+  border:10px solid #A69BD1;
   border-radius: 50px;
   display:flex;
   flex-direction:column;

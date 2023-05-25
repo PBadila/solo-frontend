@@ -1,7 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import AddBlog from './AddBlog'
+import orobouros from '../imgs/orobouros.png'
+import gumball from '../imgs/gum5Pink.png'
+
 
 
 
@@ -53,7 +55,7 @@ const Blog = () => {
                             
                             <div key={blog.id}>
                                 <div className="blogCard">
-                                <h1 className="blogAffirmation">{blog.affirmation}</h1>,
+                                <img className="blogPic" src={orobouros}/>,
                                 <h2>{blog.date.slice(0,10)}</h2>,      
                                 <p>{blog.entry.slice(0,150)}...</p>
                             </div>
