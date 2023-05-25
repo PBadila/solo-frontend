@@ -28,7 +28,7 @@ const HomeScreen = () => {
     
     return (
         <div className="mainContainerHome">
-            <DateComponent />
+            {/* <DateComponent /> */}
             {/* <Name username = {userName}/>   */}
            
            <button className="seeAssignments" onClick={toAssignments}>Go to Assignments</button>
