@@ -96,7 +96,11 @@ API link https://homeschool-app.onrender.com/
 
 API routes :
 /assignments/user/:userID
+
 /calendars
+
 /blogs/user/:userID
+
 /users
+
 /affirmations
